@@ -156,14 +156,11 @@ class StudentHome extends React.Component {
               </div>
               <CardContent>
                 <div>
-                  <b>Email:</b>
+                  <b>Email: </b>
                   {this.state.student_email === "" ? (
                     <div> You are not logged in </div>
-                  ) : (
-                    this.state.skill_arr.map(itr => {
-                      return itr + ", ";
-                    })
-                  )}
+                  ) : this.state.student_email
+                  }
                 </div>
                 <br />
                 <div>
@@ -266,7 +263,7 @@ class StudentHome extends React.Component {
                         {" "}
                         Company: {itr.Company}{" "}
                       </div>
-                      <div className="contractInfo"> Cost: {itr.Cost} </div>
+                      <div className="contractInfo"> Cost: ${itr.Cost} </div>
                       <div className="contractInfo"> Hours: {itr.Hours} </div>
                       <br />
                     </div>
@@ -352,7 +349,7 @@ class StudentHome extends React.Component {
                         {" "}
                         Company: {itr2.Company}{" "}
                       </div>
-                      <div className="contractInfo"> Cost: {itr2.Cost} </div>
+                      <div className="contractInfo"> Cost: ${itr2.Cost} </div>
                       <div className="contractInfo"> Hours: {itr2.Hours} </div>
                       <br />
                     </div>
