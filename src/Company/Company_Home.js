@@ -155,7 +155,7 @@ class CompanyHome extends React.Component {
     return (
       <div className="Company-whole">
         <CompanyNavBar history={this.props.history} />
-        <h1>Dashboard</h1>
+        <h1>Company Dashboard</h1>
 
         <div className="Student-Profile">
           <List>
